@@ -1,0 +1,39 @@
+body
+{
+    background-color: whitesmoke;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+}
+header 
+{
+    font-family: 'Bangers', cursive;
+    background-color: #134A61;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+main
+{
+    background-color: white;
+    padding: 30px;
+}
+h2
+{
+    font-family: 'Bangers', cursive;
+
+}
+.finstigram-post
+{
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 3%;
+}
+img.profilepic
+{
+    border-radius: 50%;
+}
+img.mainpic
+{
+    padding: 15px;
+}
