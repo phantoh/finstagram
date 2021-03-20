@@ -6,21 +6,21 @@
             <% @finstagram_posts.each do |finstagram_post| %>
                 <article class="finstigram-post">
                     <div class="user-info">
-                        <img src="<%= finstagram_post[:avatar_url] %>" alt="<%= finstagram_post[:username] %>" class="profilepic">
-                        <h2><%= finstagram_post[:username] %></h2>
-                        <h3><%= finstagram_post[:humanized_time_ago] %></h3>
+                        <img src="<%= finstagram_post.user.avatar_url %>" alt="<%= finstagram_post.user.username %>" class="profilepic">
+                        <h2><%= finstagram_post.user.username %></h2>
+                        <h3><%= finstagram_post.humanized_time_ago %></h3>
                     </div>
                     <a class="photo" href="#">
-                        <img src="<%= finstagram_post[:photo_url] %>" alt="finstagaram post from <%= finstagram_post[:username] %>" class="mainpic">
+                        <img src="<%= finstagram_post.photo_url %>" alt="finstagaram post from <%= finstagram_post.user.username %>" class="mainpic">
                     </a>
                     <div class="actions">
-                        <%= finstagram_post[:like_count] %> likes
-                        <span class="comment-count"><%= finstagram_post[:comment_count] %> comments</span>
+                        <%= finstagram_post.like_count %> likes
+                        <span class="comment-count"><%= finstagram_post.comment_count %> comments</span>
                     </div>
                     <ul class="comments">
-                        <% finstagram_post[:comments].each do |comment| %>
+                        <% finstagram_post.comments.each do |comment| %>
                             <li>
-                                <p><%= comment[:username] %>: <%= comment[:text] %></p>
+                                <p><%= comment.user.username %>: <%= comment.text %></p>
                             </li>
                         <% end %>
                     </ul>
