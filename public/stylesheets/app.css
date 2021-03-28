@@ -17,13 +17,15 @@ main
     background-color: white;
     padding: 30px;
 }
-/* h1
+h1
 {
-    padding-left: 45%;
-} */
+    color: red;
+    padding-left: 42%;
+}
 h2
 {
     font-family: 'Bangers', cursive;
+    color: #000;
 
 }
 .finstigram-post
@@ -41,3 +43,4 @@ img.mainpic
 {
     padding: 15px;
 }
+
