@@ -17,10 +17,10 @@ main
     background-color: white;
     padding: 30px;
 }
-h1
+h1 a
 {
-    color: red;
-    padding-left: 42%;
+    color: #fff;
+    /* padding-left: 50%; */
 }
 h2
 {

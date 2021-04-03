@@ -32,7 +32,8 @@ header {
 }
 
 header > .login-info {
-  margin-left: auto;
+  /* margin-left: auto; */
+  padding-left: 10%;
 }
 
 main {
